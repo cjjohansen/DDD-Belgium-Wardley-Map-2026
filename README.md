@@ -44,5 +44,6 @@ unknown classes) and builds the HTML. `npm run dev` serves the deck on http://lo
   that shows them.
 - The GalaxiTech Display typeface is Montserrat (SIL Open Font License) with two altered capitals;
   the other fonts are from Fontsource, also under the SIL Open Font License.
-- Everything else, the slides, the text, the Harbour Insurance scenario and the maps that are
-  not marked "after" someone, is by Christian Johansen, GalaxiTech. Ask before reusing it.
+- Everything else, the slides, the text, the Harbour Insurance scenario and our own maps, is by
+  Christian Johansen, GalaxiTech, and released under the same licence, CC BY-SA 4.0 (see `LICENSE`).
+  Reuse it with credit, and share what you build on it under the same terms.

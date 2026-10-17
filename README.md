@@ -37,8 +37,8 @@ unknown classes) and builds the HTML. `npm run dev` serves the deck on http://lo
   drew them. Maps marked "after Simon Wardley" are redrawn from his CC BY-SA figures and carry the
   same licence.
 - Maps marked "after" another author (`diagrams/book-*.mmd`) are redrawn from one figure in that
-  author's book, with the figure and page named on the map. They are here with the authors'
-  permission where the book is all rights reserved; see `wardley-sources.md` for the figure each
+  author's book, with the figure and page named on the map. Where the book is all rights reserved the author was asked first; the maps whose
+  authors have not answered yet are held back from this copy. See `wardley-sources.md` for the figure each
   one follows and where a line is a judgement.
 - The Wardley Mapping Canvas is by Ben Mosior, CC BY-SA 4.0. Photos are credited on the slide
   that shows them.

@@ -1,0 +1,61 @@
+wardley-beta
+size [1280, 720]
+
+anchor "Journalist" [0.95, 0.30]
+anchor "Subscriber" [0.95, 0.42]
+component "Publish an article" [0.86, 0.30]
+component "Read the news" [0.86, 0.42]
+component "Web browser" [0.74, 0.66]
+component "Website" [0.64, 0.38]
+component "CDN" [0.64, 0.68]
+component "CMS" [0.54, 0.30]
+component "Web server" [0.54, 0.46]
+component "APIs" [0.44, 0.38]
+component "Search engine" [0.44, 0.70]
+component "Platform" [0.34, 0.38]
+component "Storage" [0.24, 0.56]
+component "Compute" [0.24, 0.72]
+component "Power" [0.12, 0.84]
+
+"Journalist" -> "Publish an article"
+"Subscriber" -> "Read the news"
+"Publish an article" -> "Web browser"
+"Read the news" -> "Web browser"
+"Web browser" -> "Website"
+"Web browser" -> "CDN"
+"Website" -> "CMS"
+"Website" -> "Web server"
+"CMS" -> "APIs"
+"CMS" -> "Platform"
+"Web server" -> "APIs"
+"Web server" -> "Search engine"
+"Web server" -> "Platform"
+"APIs" -> "Platform"
+"Search engine" -> "Platform"
+"Platform" -> "Storage"
+"Platform" -> "Compute"
+"Storage" -> "Power"
+"Compute" -> "Power"
+
+%% label-side "Publish an article" left
+%% label-side "Read the news" right
+%% label-side "Web browser" right
+%% label-side "Website" left
+%% label-side "CMS" left
+%% label-side "Web server" right
+%% label-side "APIs" left
+%% label-side "Platform" left
+%% label-side "Search engine" right
+%% label-side "Storage" left
+%% label-side "Compute" right
+%% leaf "CDN"
+%% allow-crossing "Web server"
+%% direct-need "CMS" "Platform"
+%% direct-need "Web server" "Platform"
+note "After Sarah Wells, Enabling Microservice Success, figure 11-5, p. 304" [0.03, 0.04]
+%% Redrawn link for link from "A simplified Wardley Map for a newspaper" (O'Reilly, 2024), chapter 11,
+%% Governance and Standardization, checked against the figure on 17 Oct: both needs go through the
+%% web browser; the website rests on the CMS and the web server; those rest on the APIs, the search
+%% engine and the platform; the platform on storage and compute; those on power. The book's point:
+%% what sits at the bottom is a commodity you buy, the middle is probably a product, and you build
+%% only at the top left, where you differentiate.
